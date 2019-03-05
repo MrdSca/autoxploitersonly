@@ -1,11 +1,11 @@
 <!DOCTYPE html><html><head><meta charset="UTF-8">
 <title> # Auto Xploiters Only | SCA </title>
 <link rel="icon" type="image/jpg" href='https://seken.co.id/assets/uploads/post/Monkey-de-Luffy-One-Piece-81.jpg'/>
-<center><h1><b><font color="blue"> { SUNDA CYBER ARMY } </font></b></h1></center>
+<center><h1><b><font color="red"> { SUNDA CYBER ARMY } </font></b></h1></center>
 <center><img border="0" src="https://seken.co.id/assets/uploads/post/Monkey-de-Luffy-One-Piece-81.jpg" width="300" height="250">
-<pre><hr><center><h1><i><font color="blue"> -= > sundacyberarmy@gmail.com | https://www.xploiters77.ml | http://www.xploiters77.cf <=- </font></i></h1></hr></pre> 
-<pre><hr><center><h1><i><font color="blue"> -=> Channel Youtube : Sunda Cyber Army | Fanspage : https://www.facebook.com/SundaCyberArmy/ <=- </font></i></h1></center></hr></pre>
-<hr><center><h1><i><font color="blue"> -=> Github : https://github/MrdSca <=- </font></i></h1></center></hr>
+<pre><hr><center><h1><i><font color="red"> -= > sundacyberarmy@gmail.com | https://www.xploiters77.ml | http://www.xploiters77.cf <=- </font></i></h1></hr></pre> 
+<pre><hr><center><h1><i><font color="red"> -=> Channel Youtube : Sunda Cyber Army | Fanspage : https://www.facebook.com/SundaCyberArmy/ <=- </font></i></h1></center></hr></pre>
+<hr><center><h1><i><font color="red"> -=> Github : https://github/MrdSca <=- </font></i></h1></center></hr>
 <hr><iframe width="0%" height="0" scrolling="no" frameborder="no" loop="true" allow="autoplay" src="https://d.top4top.net/m_10932vbu71.mp3"></iframe></hr>
 <?php
  
