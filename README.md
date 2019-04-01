@@ -1,2 +1,2 @@
-# Auto-Xploiters-Only-ScA
+# Auto-Xploiters-Only
 # uploaded to the website ;)
